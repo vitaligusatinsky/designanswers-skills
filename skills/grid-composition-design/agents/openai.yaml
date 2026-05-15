@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grid Composition Design"
+  short_description: "Typography-led grid design audits"
+  default_prompt: "Use this DesignAnswers skill to create or refine a typography-led grid composition. Start from hierarchy and section contracts, reduce decorative chrome, and validate with screenshots plus geometry evidence."
