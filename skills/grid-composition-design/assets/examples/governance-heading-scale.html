@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Governance Heading Scale Example</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --ink: oklch(94% 0.018 83);
+        --muted: oklch(74% 0.018 83);
+        --quiet: oklch(48% 0.018 83);
+        --red: oklch(62% 0.23 31);
+        --bg: oklch(16% 0.016 246);
+        --rule: oklch(72% 0.012 83 / 0.72);
+        --gap: 1.55rem;
+        font-family:
+          Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        margin: 0;
+        min-height: 100%;
+        background: var(--bg);
+      }
+
+      body {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        place-items: stretch;
+        color: var(--ink);
+      }
+
+      .frame {
+        inline-size: 100vw;
+        block-size: 100vh;
+        display: grid;
+        grid-template-columns:
+          [full-start] minmax(2.4rem, 1fr)
+          [content-start] minmax(0, 76.75rem)
+          [content-end] minmax(2.4rem, 1fr)
+          [full-end];
+        padding-block: 6.15rem 4.65rem;
+      }
+
+      .section {
+        grid-column: content-start / content-end;
+        display: grid;
+        grid-template-columns: repeat(4, [col-start] minmax(0, 1fr) [col-end]);
+        column-gap: var(--gap);
+        align-content: start;
+      }
+
+      .eyebrow {
+        grid-column: 1 / -1;
+        color: var(--red);
+        font-size: 0.76rem;
+        line-height: 1;
+        font-weight: 850;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        grid-column: 1 / -1;
+        max-inline-size: 16.8ch;
+        margin: 2.95rem 0 2.15rem;
+        font-size: 4.85rem;
+        line-height: 0.9;
+        font-weight: 880;
+        letter-spacing: 0;
+      }
+
+      .rule {
+        grid-column: 1 / -1;
+        block-size: 0.0625rem;
+        background: var(--rule);
+      }
+
+      .stats,
+      .notes {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: subgrid;
+        column-gap: var(--gap);
+      }
+
+      .stats {
+        margin-block-start: 1.1rem;
+      }
+
+      .stat,
+      .note {
+        grid-column: span 1;
+        min-inline-size: 0;
+      }
+
+      .number {
+        display: block;
+        margin-block-end: 0.28rem;
+        font-size: 3.25rem;
+        line-height: 0.92;
+        font-weight: 860;
+        letter-spacing: 0;
+      }
+
+      .label {
+        max-inline-size: 18ch;
+        color: var(--muted);
+        font-size: 0.82rem;
+        line-height: 1.24;
+        font-weight: 560;
+      }
+
+      .notes {
+        margin-block-start: 5.15rem;
+      }
+
+      .note {
+        padding-block-start: 0.92rem;
+        border-block-start: 0.0625rem solid oklch(44% 0.014 83);
+      }
+
+      .note h2 {
+        margin: 0 0 0.78rem;
+        color: var(--red);
+        font-size: 0.74rem;
+        line-height: 1.1;
+        font-weight: 850;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+      }
+
+      .note p {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.9rem;
+        line-height: 1.32;
+        font-weight: 560;
+      }
+
+      .contract {
+        position: fixed;
+        right: 1rem;
+        bottom: 1rem;
+        display: grid;
+        grid-template-columns: 1.75rem auto;
+        gap: 0.55rem;
+        align-items: center;
+        padding: 0.55rem 0.72rem;
+        border-radius: 0.28rem;
+        background: oklch(89% 0.012 83);
+        color: oklch(20% 0.012 246);
+        font-size: 0.72rem;
+        font-weight: 850;
+        letter-spacing: 0.02em;
+      }
+
+      .switch {
+        inline-size: 1.75rem;
+        block-size: 0.92rem;
+        border-radius: 99rem;
+        background: oklch(78% 0.01 83);
+        position: relative;
+      }
+
+      .switch::before {
+        content: "";
+        position: absolute;
+        inline-size: 0.64rem;
+        block-size: 0.64rem;
+        inset-block-start: 0.14rem;
+        inset-inline-start: 0.18rem;
+        border-radius: 50%;
+        background: oklch(38% 0.02 246);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="frame">
+      <section class="section" aria-label="Governance evidence section">
+        <div class="eyebrow">04 / Governance</div>
+        <h1>Governance needs a single evidence grid.</h1>
+        <div class="rule" aria-hidden="true"></div>
+
+        <div class="stats">
+          <div class="stat">
+            <strong class="number">73%</strong>
+            <div class="label">of AI experts expect positive job impact.</div>
+          </div>
+          <div class="stat">
+            <strong class="number">23%</strong>
+            <div class="label">of the public shares that optimism.</div>
+          </div>
+          <div class="stat">
+            <strong class="number">31%</strong>
+            <div class="label">trust government to regulate AI effectively.</div>
+          </div>
+          <div class="stat">
+            <strong class="number">1 in 3</strong>
+            <div class="label">organizations expect workforce reductions.</div>
+          </div>
+        </div>
+
+        <div class="notes">
+          <article class="note">
+            <h2>Measurement</h2>
+            <p>Benchmarks mature faster than responsibility reporting.</p>
+          </article>
+          <article class="note">
+            <h2>Trust</h2>
+            <p>Public legitimacy depends on transparent incident signals.</p>
+          </article>
+          <article class="note">
+            <h2>Workforce</h2>
+            <p>Labor transitions need consent, retraining, and time.</p>
+          </article>
+          <article class="note">
+            <h2>Mandate</h2>
+            <p>Clear rules turn adoption from guesswork into governance.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <div class="contract" aria-hidden="true">
+      <span class="switch"></span>
+      <span>4 COL</span>
+    </div>
+  </body>
+</html>

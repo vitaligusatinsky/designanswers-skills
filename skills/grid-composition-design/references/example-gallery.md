@@ -7,7 +7,7 @@ Use these images as quick visual references when applying `grid-composition-desi
 ## Examples
 
 - `assets/examples/systems-equal-modules.png` - equal-width visual modules with a quiet top rule instead of fake chart-grid decoration.
-- `assets/examples/governance-heading-scale.png` - section heading scaled and spanned to dominate the stat row below it.
+- `assets/examples/governance-heading-scale.png` - section heading, evidence, and notes using one four-column contract with no odd/even grid mixing inside the section.
 - `assets/examples/work-side-rail.png` - article flow with a separated, intrinsic-height timeline side rail.
 - `assets/examples/source-ledger-balanced.png` - six source cards balanced as a 3-by-2 desktop grid with no orphan item.
 - `assets/examples/dark-matrix-tightened.png` - dark matrix modules with title/copy rhythm tightened instead of `space-between` drift.
