@@ -75,6 +75,8 @@ Give each section a clear internal grammar.
 - Repeated grids must balance final rows. Do not leave a single orphan item unless it is deliberately promoted as a feature.
 - A six-item ledger should usually be `3 x 2` on desktop, `2 x 3` on tablet, and one column on mobile.
 - Avoid odd/even alternation within a section unless the asymmetry is the concept. If row 1 uses 3-up equal modules, row 2 should not suddenly use 2-up wide/narrow modules.
+- Do not follow a four-up evidence/stat row with an unrelated asymmetric prose grid such as `5 + 4`, `6 + 3`, or offset two-column copy. Either keep the prose on the same four-cell contract, grouping as `2 + 2`, or redesign the entire section around a two-column contract.
+- Treat "same underlying structure" as a measurable claim: successive rows in one section should share the same column starts, gutters, and span units unless the hierarchy explicitly promotes one row.
 - Side rails, source rails, timelines, and marginal navigation need independent rhythm. Do not stretch them to the full article height unless they are explicitly a full-height axis.
 - Sticky elements must remain useful for the full range where they appear. A sticky nav visible only for the first slice reads as broken; make it static or redesign the section around it.
 

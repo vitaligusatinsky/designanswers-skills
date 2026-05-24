@@ -14,6 +14,8 @@ Use this checklist when reviewing or refining a visual composition.
 - Verify full-bleed sections return to the same content inset internally.
 - Verify repeated modules in a section use one consistent span pattern.
 - Look for accidental remainders: 5+1, 3+1, or lone final-row cards.
+- For mixed stat/prose sections, compare the row grammar. A four-up stat row followed by offset or unequal prose columns fails unless the prose clearly groups the same cells, such as 2+2 on the same four-column contract.
+- Do not accept explanatory copy that says the layout shares one structure until geometry proves the rows share column starts, gutters, and span units.
 
 ## Vertical Rhythm
 
