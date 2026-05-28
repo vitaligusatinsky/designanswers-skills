@@ -4,6 +4,13 @@
 
 Public agent skills from DesignAnswers.
 
+## Sync Status
+
+Last verified sync: 2026-05-28.
+
+The published `grid-composition-design` skill matches the active Codex skill at
+`~/.codex/skills/grid-composition-design`.
+
 ## Grid Composition Design
 
 Typography-led grid design and audit guidance for editorial pages, reports, dashboards, visual essays, and other compositions where hierarchy, proportion, grid contracts, responsive rhythm, asides, and visual modules matter.
