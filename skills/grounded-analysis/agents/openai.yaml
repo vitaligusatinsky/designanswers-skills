@@ -1,0 +1,4 @@
+interface:
+  display_name: "Grounded Analysis"
+  short_description: "Analysis that cites its evidence and survives an adversarial self-check"
+  default_prompt: "Use this DesignAnswers skill to analyze a session, idea, plan, decision, or performance. Ground every claim in the source first, separate observation from judgment, label confidence, and run each sharp or critical claim through an adversarial check before delivering. Keep critiques sharp but cited."
